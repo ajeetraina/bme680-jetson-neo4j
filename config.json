@@ -1,0 +1,26 @@
+{
+    "neo4j": {
+        "uri": "neo4j+s://41275b2a.databases.neo4j.io",
+        "user": "neo4j",
+        "password": "REPLACE_WITH_YOUR_PASSWORD"
+    },
+    "tensorrt": {
+        "model_path": "models/sensor_model.engine",
+        "threshold": 0.75,
+        "enable_filtering": true
+    },
+    "sampling": {
+        "interval": 5,
+        "batch_size": 10
+    },
+    "logging": {
+        "file": "sensor_logs.json",
+        "level": "INFO",
+        "enable_console": true
+    },
+    "features": {
+        "anomaly_detection": true,
+        "data_enrichment": true,
+        "notifications": false
+    }
+}
